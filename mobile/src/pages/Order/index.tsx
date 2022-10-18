@@ -56,14 +56,15 @@ export default function Order() {
     CategoryProps | undefined
   >();
 
-  const [amount, setAmount] = useState("1");
-  const [modalCategoryVisible, setModalCategoryVisible] = useState(false);
-
   const [products, setProducts] = useState<ProductProps[] | []>([]);
   const [productSelected, setProductSelected] = useState<
     ProductProps | undefined
   >();
+
+  const [modalCategoryVisible, setModalCategoryVisible] = useState(false);
   const [modalProductVisible, setModalProductVisible] = useState(false);
+
+  const [amount, setAmount] = useState("1");
   const [items, setItems] = useState<ItemProps[]>([]);
 
   useEffect(() => {
